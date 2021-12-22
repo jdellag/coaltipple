@@ -1,0 +1,261 @@
+print('# HOURS, 2 CREW MAX, 3 TRAINS # WEEKS')
+import random
+from random import randrange
+def getHourForTrain(n):
+  return randrange(5+24*n, 20+24*n)
+def getHourForHCTrain(n):
+  return randrange(11+24*n, 13+24*n)
+
+def generateMonth():
+  return {
+    "week1": {
+      "train1": getHourForTrain(0),
+      "train2": getHourForTrain(0),
+      "train3": getHourForTrain(0),
+      #"train4": getHourForTrain(0),
+
+      "train5": getHourForTrain(1),
+      "train6": getHourForTrain(1),
+      "train7": getHourForTrain(1),
+      #"train8": getHourForTrain(1),
+
+      "train9": getHourForTrain(2),
+      "train10": getHourForTrain(2),
+      "train11": getHourForTrain(2),
+     # "train12": getHourForTrain(2),
+
+      "train13": getHourForTrain(3),
+      "train14": getHourForTrain(3),
+      "train15": getHourForTrain(3),
+     # "train16": getHourForTrain(3),
+      "trainhc": getHourForHCTrain(3),
+      "train17": getHourForTrain(4),
+      "train18": getHourForTrain(4),
+      "train19": getHourForTrain(4),
+     # "train20": getHourForTrain(4),
+
+      "train21": getHourForTrain(5),
+      "train22": getHourForTrain(5),
+      "train23": getHourForTrain(5),
+     # "train24": getHourForTrain(5),
+ 
+      "train25": getHourForTrain(6),
+      "train26": getHourForTrain(6),
+      "train27": getHourForTrain(6),
+     # "train28": getHourForTrain(6),
+
+    },
+     "week2": {
+      "train1": getHourForTrain(0),
+      "train2": getHourForTrain(0),
+      "train3": getHourForTrain(0),
+     # "train4": getHourForTrain(0),
+
+      "train5": getHourForTrain(1),
+      "train6": getHourForTrain(1),
+      "train7": getHourForTrain(1),
+      #"train8": getHourForTrain(1),
+
+      "train9": getHourForTrain(2),
+      "train10": getHourForTrain(2),
+      "train11": getHourForTrain(2),
+      #"train12": getHourForTrain(2),
+
+      "train13": getHourForTrain(3),
+      "train14": getHourForTrain(3),
+      "train15": getHourForTrain(3),
+     # "train16": getHourForTrain(3),
+      "trainhc": getHourForHCTrain(3),
+      "train17": getHourForTrain(4),
+      "train18": getHourForTrain(4),
+      "train19": getHourForTrain(4),
+     # "train20": getHourForTrain(4),
+
+      "train21": getHourForTrain(5),
+      "train22": getHourForTrain(5),
+      "train23": getHourForTrain(5),
+     # "train24": getHourForTrain(5),
+ 
+      "train25": getHourForTrain(6),
+      "train26": getHourForTrain(6),
+      "train27": getHourForTrain(6),
+     # "train28": getHourForTrain(6),
+
+    },
+     "week3": {
+      "train1": getHourForTrain(0),
+      "train2": getHourForTrain(0),
+      "train3": getHourForTrain(0),
+      #"train4": getHourForTrain(0),
+
+      "train5": getHourForTrain(1),
+      "train6": getHourForTrain(1),
+      "train7": getHourForTrain(1),
+     # "train8": getHourForTrain(1),
+
+      "train9": getHourForTrain(2),
+      "train10": getHourForTrain(2),
+      "train11": getHourForTrain(2),
+     # "train12": getHourForTrain(2),
+
+      "train13": getHourForTrain(3),
+      "train14": getHourForTrain(3),
+      "train15": getHourForTrain(3),
+     # "train16": getHourForTrain(3),
+      "trainhc": getHourForHCTrain(3),
+
+      "train17": getHourForTrain(4),
+      "train18": getHourForTrain(4),
+      "train19": getHourForTrain(4),
+      #"train20": getHourForTrain(4),
+
+      "train21": getHourForTrain(5),
+      "train22": getHourForTrain(5),
+      "train23": getHourForTrain(5),
+     # "train24": getHourForTrain(5),
+ 
+      "train25": getHourForTrain(6),
+      "train26": getHourForTrain(6),
+      "train27": getHourForTrain(6),
+     # "train28": getHourForTrain(6),
+
+    },
+     "week4": {
+      "train1": getHourForTrain(0),
+      "train2": getHourForTrain(0),
+      "train3": getHourForTrain(0),
+      #"train4": getHourForTrain(0),
+
+      "train5": getHourForTrain(1),
+      "train6": getHourForTrain(1),
+      "train7": getHourForTrain(1),
+      #"train8": getHourForTrain(1),
+
+      "train9": getHourForTrain(2),
+      "train10": getHourForTrain(2),
+      "train11": getHourForTrain(2),
+     # "train12": getHourForTrain(2),
+
+      "train13": getHourForTrain(3),
+      "train14": getHourForTrain(3),
+      "train15": getHourForTrain(3),
+     # "train16": getHourForTrain(3),
+      "trainhc": getHourForHCTrain(3),
+
+      "train17": getHourForTrain(4),
+      "train18": getHourForTrain(4),
+      "train19": getHourForTrain(4),
+      #"train20": getHourForTrain(4),
+
+      "train21": getHourForTrain(5),
+      "train22": getHourForTrain(5),
+      "train23": getHourForTrain(5),
+      #"train24": getHourForTrain(5),
+ 
+      "train25": getHourForTrain(6),
+      "train26": getHourForTrain(6),
+      "train27": getHourForTrain(6),
+      #"train28": getHourForTrain(6),
+
+    },
+  }
+
+
+
+
+
+# checks to see if trains have arrived
+def isArrived(mins, trains, arrived):
+  for train, arriveTime in trains.items():
+    if mins == arriveTime:
+      if 'hc' in train:
+        arrived.append(2)
+      else:
+        arrived.append(0)
+  return arrived
+
+
+
+# takes currently arrived trains and calcualtes demmurage
+def demmurage(arrived, isLoading):
+  dem = 0
+  totalCost = 0
+  for train in arrived:
+    if train == arrived[0] and isLoading:
+      dem += 0
+    else:
+      if train > 0:
+        dem += 25000
+      else:
+        dem += 15000
+  return dem
+
+
+
+def simMonth():
+  month = generateMonth()
+  dem = 0
+  crewCost=0
+  crewCost1=0
+  crewCost2=0
+  crewCost3=0
+  totalCost=0
+  for week in month:
+    trains = month[week]
+    hours = 0
+    arrived = []
+    tipple = 1.5
+    while(hours < 168):
+    # if train has arrived
+      arrived = isArrived(hours, trains, arrived)
+    # if there is a train that needs loading
+      if len(arrived) > 0:
+      # if we have coal in the tipple and it's a regular train, fill it
+        if tipple >= 1:
+        #takes 3 hours to fill
+          tipple -= 1
+        #checks to make sure a different train didn't arrive
+          for i in range(int(3/(random.uniform(.85,1.05)))):
+            dem += demmurage(arrived, True)
+            hours += 1
+            arrived = isArrived(hours, trains, arrived)
+          arrived[0] -= 1
+          if arrived[0] <= 0:
+            arrived.pop(0)
+        else: # if we don't have coal to fill it, its cheaper to hire a second crew
+          crews=2
+          crewCost3 += (12000*crews-3000)
+          dem += demmurage(arrived, False)
+          tipple += (0.5)*random.uniform(.75,1.05)
+          hours += 1      
+    # if there are no trains, fill up for an hour
+      elif len(arrived) == 0 and tipple < 1.5:
+        crews=1
+        crewCost1 += (12000*crews-3000)
+        tipple += 0.25*random.uniform(.85,1.05)
+        hours += 1
+      else: # if we are full of tipple and no one has arrived, do nothing
+        hours += 1
+  crewCost += crewCost1+crewCost3
+  totalCost = dem + crewCost
+  #print('Crew Cost =',crewCost)
+  #print('Dem=',dem)
+  #print('Total Cost = %s, Demurrage Cost = %s, Crew Cost= %s' % (totalCost, dem,crewCost))
+  return[totalCost, dem, crewCost]
+totals =[]
+realTotalCost = 0
+realDemCost = 0
+realCrewCost = 0
+n = 6000
+
+for i in range(0,n):
+  totals.append(simMonth())
+  realTotalCost += (totals[i][0]/4)
+  realDemCost += (totals[i][1]/4)
+  realCrewCost += (totals[i][2]/4)
+
+nptotals=np.asarray(totals)
+print("MONTHLY Avg Cost = %s, Demurrage Cost = %s, Crew Cost = %s" % ((4*realTotalCost) / n, (4*realDemCost) / n, (4*realCrewCost) / n))
+print("{:,.2f} & {:,.2f} & {:,.2f} & {:,.2f}".format((4*realTotalCost / n), (4*realDemCost / n), (4*realCrewCost / n), 4*stdev(nptotals[:,0])))
+print("WEEKLY Avg Cost = %s, Demurrage Cost = %s, Crew Cost = %s" % (realTotalCost / n, realDemCost / n, realCrewCost / n))
+print("{:,.2f} & {:,.2f} & {:,.2f} & {:,.2f}".format((realTotalCost / n), (realDemCost / n), (realCrewCost / n), stdev(nptotals[:,0])))
